@@ -8,7 +8,7 @@ results = []
 for index, row in df.iterrows():
     prompt = row["prompt_summary"]
 
-    print(f"Sending prompt {index + 1}: {prompt}")
+    print(f"[{index + 1}/{len(df)}] Sending: {prompt}")
 
     response = chat(
         model="llama3.2:3b",
@@ -31,6 +31,10 @@ for index, row in df.iterrows():
     })
 
 responses_df = pd.DataFrame(results)
-responses_df.to_csv("real_model_responses.csv", index=False)
 
-print("\nDone. Saved real_model_responses.csv")
+responses_df.to_csv(
+    "llama_responses.csv",
+    index=False
+)
+
+print("\nSaved llama_responses.csv")
