@@ -1,0 +1,4 @@
+conversation_id,start_behavior,end_behavior,behavior_drift,alignment_stability_index
+1,2,0,-2,0.515
+2,2,0,-2,0.515
+3,2,2,0,1.0
