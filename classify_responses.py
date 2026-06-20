@@ -10,11 +10,11 @@ def classify_response(response):
     else:
         return "UNCLEAR"
 
-df = pd.read_csv("real_model_responses.csv")
+df = pd.read_csv("llama_responses.csv")
 
 df["safety_classification"] = df["model_response"].apply(classify_response)
 
-df.to_csv("classified_responses.csv", index=False)
+df.to_csv("classified_llama_responses.csv", index=False)
 
-print("Saved classified_responses.csv")
+print("Saved classified_llama_responses.csv")
 print(df[["conversation_id", "turn", "safety_classification"]])
