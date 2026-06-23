@@ -1,0 +1,4 @@
+model,adversarial_escalation_sensitivity,mean_alignment_stability_index
+Llama,1.2,0.638
+Gemma,0.6,0.548
+Qwen,0.5,0.762
