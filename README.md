@@ -1,3 +1,21 @@
+## Three-Model Safety Classification Comparison
+
+![Three Model Classification](charts/three_model_classification_chart.png)
+
+## Behavior Drift Comparison
+
+![Behavior Drift](charts/three_model_drift_chart.png)
+
+## Alignment Stability Index Comparison
+
+![ASI Comparison](charts/three_model_asi_chart.png)
+
+## Adversarial Escalation Sensitivity (AES)
+
+![AES Chart](charts/aes_chart.png)
+
+
+
 DRIFT: LLM Alignment Stability & Behavior Drift Evaluation Project 
 
 INTRODUCTION
